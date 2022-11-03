@@ -12,6 +12,12 @@ var data = [{
   name: "Овощной салат и бутерброды с рыбой",
   img: "2.jpeg",
   ingredients: ["перец", "помидор", "огурец", "творожный сыр", "пекинская капуста", "французская горчица", "красная рыба", "хлеб"]
+},
+{
+  id: 3,
+  name: "Печень с рисом",
+  img: "3.jpeg",
+  ingredients: ["печень куриная", "кетчуп", "сметана", "лук", "морковь", "рис", "салат из морской капусты"]
 }];
 
 
@@ -28,12 +34,12 @@ function App() {
   return (
     <div className="container">
       <div className="header">
-        FOOTRANDOM
+        FOODRANDOM
       </div>
       {
         meal ? <ShowMealCard meal={meal} 
                              generateRandomMeal={generateRandomMeal} /> 
-             : <MainButton generateRandomMeal={generateRandomMeal} />
+             : <StartScreen generateRandomMeal={generateRandomMeal} />
       }
 
     </div>
@@ -42,10 +48,17 @@ function App() {
 
 export default App;
 
-function MainButton(props) {
-  console.log(props)
+function StartScreen({generateRandomMeal}) {
   return (
-    <button onClick={props.generateRandomMeal}>
+    <div class="buttonContainer">
+      <MainButton inversed={true} generateRandomMeal={generateRandomMeal}/>
+    </div>
+  )
+}
+
+function MainButton({inversed, generateRandomMeal}) {
+  return (
+    <button className={"generateButton " + (inversed?"buttonInversed":null)} onClick={generateRandomMeal}>
       Generate random meal
     </button>
   )
@@ -57,11 +70,8 @@ function ShowMealCard({ meal , generateRandomMeal}) {
   console.log(imgLink);
   return (
     <div className="mealCard">
-      <div className='mealCartContainer'>
       <div className='left'>
-        <div className='imgStyle'>
-          <img src={require(`${imgLink}`)} width= "100%"/>
-        </div>
+          <img className='imgStyle' src={require(`${imgLink}`)} width= "100%"/>
       </div>
       <div className='right'>
         <div className='mealName'>{meal.name}</div>
@@ -74,10 +84,10 @@ function ShowMealCard({ meal , generateRandomMeal}) {
               }
           </div>
         </ul>
-        <MainButton generateRandomMeal={generateRandomMeal}/>        
-      </div>
-      </div>
-      
+        <div className="bottom">
+          <MainButton generateRandomMeal={generateRandomMeal}/>
+        </div>
+      </div>      
     </div>
   )
 }
