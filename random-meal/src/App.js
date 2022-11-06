@@ -18,6 +18,18 @@ var data = [{
   name: "Печень с рисом",
   img: "3.jpeg",
   ingredients: ["печень куриная", "кетчуп", "сметана", "лук", "морковь", "рис", "салат из морской капусты"]
+},
+{
+  id: 4,
+  name: "Колбаски с рисом и овощным салатом",
+  img: "4.jpeg",
+  ingredients: ["колбаски", "рис", "капуста", "помидор", "огурец", "перец", "французская горчица", "творожный сыр"]
+},
+{
+  id: 5,
+  name: "Бутерброды с красной рыбой и авокадо",
+  img: "5.jpeg",
+  ingredients: ["слосоленая рыба", "хлеб", "авокадо", "французская горчица"]
 }];
 
 
@@ -51,15 +63,17 @@ export default App;
 function StartScreen({generateRandomMeal}) {
   return (
     <div class="buttonContainer">
-      <MainButton inversed={true} generateRandomMeal={generateRandomMeal}/>
+      <div className="buttonBorder">
+        <MainButton inversed={true} generateRandomMeal={generateRandomMeal}/>
+      </div>
     </div>
   )
 }
 
 function MainButton({inversed, generateRandomMeal}) {
   return (
-    <button className={"generateButton " + (inversed?"buttonInversed":null)} onClick={generateRandomMeal}>
-      Generate random meal
+    <button className={"generateButton " + (inversed ? "buttonInversed" : null)} onClick={generateRandomMeal}>
+      Generate random <br/>meal
     </button>
   )
 }

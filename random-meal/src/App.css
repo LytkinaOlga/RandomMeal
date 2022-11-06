@@ -83,15 +83,19 @@
   cursor: pointer;
 }
 
+.buttonBorder {
+  border: 8px #2F4858 dashed;
+  border-radius: 25px;
+  padding: 20px 20px;
+}
+
 .buttonInversed {
   color: #F6AE2D;
   /* border: 5px #F6AE2D dashed; */
   background-color: white;
-  /* animation: buttonShake 1s ease-in-out; */
-
 }
 
-.generateButton:hover {
+.buttonBorder:hover {
   animation: buttonShake 0.4s ease-in-out;
 }
 
@@ -110,5 +114,73 @@
   }
   100% {
     rotate: 0deg;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .mealCard {
+    height: 350px;
+  }
+  .imgStyle {
+    height: 350px;
+  }
+  .mealName {
+    font-size: 30px;
+  }
+
+  .mealIngredients {
+    font-size: 20px;
+  }
+  .generateButton {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .container {
+    width: 700px;
+  }
+  .mealCard {
+    height: 270px;
+  }
+  .imgStyle {
+    height: 270px;
+  }
+  .mealName {
+    font-size: 20px;
+  }
+
+  .mealIngredients {
+    font-size: 16px;
+  }
+  .generateButton {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    width: 550px;
+  }
+  .mealCard {
+    height: 200px;
+  }
+  .imgStyle {
+    height: 200px;
+  }
+  .mealName {
+    font-size: 15px;
+  }
+
+  .mealIngredients {
+    font-size: 12px;
+  }
+  .generateButton {
+    font-size: 0.8rem;
+    padding: 5px 20px;
   }
 }
