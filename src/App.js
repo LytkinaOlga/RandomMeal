@@ -40,7 +40,6 @@ function App() {
   function generateRandomMeal() {
     var meal = data[Math.floor(Math.random() * data.length)];
     setMeal(meal);
-    console.log(meal);
   }
 
   return (
@@ -79,9 +78,7 @@ function MainButton({inversed, generateRandomMeal}) {
 }
 
 function ShowMealCard({ meal , generateRandomMeal}) {
-  console.log(meal);
   const imgLink = './img/'.concat(meal.img);
-  console.log(imgLink);
   return (
     <div className="mealCard">
       <div className='left'>

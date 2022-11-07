@@ -45,6 +45,11 @@
   justify-content: flex-start;
 }
 
+ul {
+  margin: 5px 0 0 15px;  
+  padding: 0;  
+}
+
 .imgStyle {
   border-radius: 20px;
   height: 550px;
@@ -87,6 +92,8 @@
   border: 8px #2F4858 dashed;
   border-radius: 25px;
   padding: 20px 20px;
+  display: flex;
+  align-items: center;
 }
 
 .buttonInversed {
@@ -145,20 +152,22 @@
     width: 700px;
   }
   .mealCard {
-    height: 270px;
+    height: 280px;
+    gap: 30px;
+    padding: 30px;
   }
   .imgStyle {
-    height: 270px;
+    height: 280px;
   }
   .mealName {
     font-size: 20px;
   }
-
   .mealIngredients {
     font-size: 16px;
   }
   .generateButton {
     font-size: 0.8rem;
+    padding: 10px 30px;
   }
 }
 
@@ -167,10 +176,12 @@
     width: 550px;
   }
   .mealCard {
-    height: 200px;
+    height: 230px;
+    padding: 30px;
+    gap: 30px;
   }
   .imgStyle {
-    height: 200px;
+    height: 230px;
   }
   .mealName {
     font-size: 15px;
@@ -182,5 +193,104 @@
   .generateButton {
     font-size: 0.8rem;
     padding: 5px 20px;
+  }
+  .buttonBorder {
+    border: 6px #2F4858 dashed;
+  }
+}
+
+@media (max-width: 570px) {
+  .header {
+    font-size: 30px;
+  }
+  .container {
+    width: 450px;
+  }
+  .mealCard {
+    height: 170px;
+    padding: 20px;
+  }
+  .imgStyle {
+    height: 170px;
+  }
+  .mealName {
+    font-size: 12px;
+  }
+
+  .mealIngredients {
+    font-size: 10px;
+  }
+  .generateButton {
+    font-size: 0.5rem;
+    padding: 5px 20px;
+  }
+  .buttonBorder {
+    border: 5px #2F4858 dashed;
+    padding: 15px 17px;
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+    font-size: 30px;
+  }
+  .container {
+    width: 400px;
+  }
+  .mealCard {
+    height: 170px;
+    padding: 20px;
+    gap: 25px;
+  }
+  .imgStyle {
+    height: 160px;
+  }
+  .mealName {
+    font-size: 12px;
+  }
+  .mealIngredients {
+    font-size: 10px;
+  }
+  .generateButton {
+    font-size: 0.5rem;
+    padding: 5px 20px;
+  }
+  .buttonBorder {
+    border: 4px #2F4858 dashed;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    font-size: 30px;
+  }
+  .container {
+    width: 330px;
+  }
+  .mealCard {
+    height: 145px;
+    padding: 15px;
+    gap: 20px;
+  }
+  .imgStyle {
+    height: 145px;
+  }
+  .right {
+    gap: 1px
+  }
+  .mealName {
+    font-size: 10px;
+  }
+  .mealIngredients {
+    font-size: 8px;
+  }
+  .generateButton {
+    font-size: 0.4rem;
+    padding: 4px 20px;
+  }
+  .buttonBorder {
+    border: 4px #2F4858 dashed;
+    padding: 10px 12px;
   }
 }
