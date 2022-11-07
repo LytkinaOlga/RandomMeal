@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RandomMeal/static/css/main.d42db56b.css",
-    "main.js": "/RandomMeal/static/js/main.c18d0d96.js",
+    "main.css": "/RandomMeal/static/css/main.24e0984e.css",
+    "main.js": "/RandomMeal/static/js/main.2e691159.js",
     "static/js/787.d65b4fc3.chunk.js": "/RandomMeal/static/js/787.d65b4fc3.chunk.js",
     "static/media/3.jpeg": "/RandomMeal/static/media/3.907b061f79492a187983.jpeg",
     "static/media/2.jpeg": "/RandomMeal/static/media/2.7baf628243e8c4c504fd.jpeg",
@@ -27,12 +27,12 @@
     "static/media/Montserrat-Thin.ttf": "/RandomMeal/static/media/Montserrat-Thin.413b6b9f23ece3b343a7.ttf",
     "static/media/1.jpeg": "/RandomMeal/static/media/1.1c7d5167013c40b79ade.jpeg",
     "index.html": "/RandomMeal/index.html",
-    "main.d42db56b.css.map": "/RandomMeal/static/css/main.d42db56b.css.map",
-    "main.c18d0d96.js.map": "/RandomMeal/static/js/main.c18d0d96.js.map",
+    "main.24e0984e.css.map": "/RandomMeal/static/css/main.24e0984e.css.map",
+    "main.2e691159.js.map": "/RandomMeal/static/js/main.2e691159.js.map",
     "787.d65b4fc3.chunk.js.map": "/RandomMeal/static/js/787.d65b4fc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d42db56b.css",
-    "static/js/main.c18d0d96.js"
+    "static/css/main.24e0984e.css",
+    "static/js/main.2e691159.js"
   ]
 }
